@@ -25,6 +25,7 @@ env:
 before_script: 
   - "echo yes | android update sdk --filter platform-tools --no-ui --force > /dev/null"
   - "echo yes | android update sdk --filter android-23 --no-ui --force > /dev/null"
+  - echo yes | android update sdk --no-ui --all --filter build-tools-23.0.1
   - "echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null"
   - "echo yes | android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null"
   - "export NDK_VERSION=r10e"
