@@ -3,13 +3,13 @@ apply plugin: 'com.vanniktech.android.junit.jacoco'
 apply plugin: 'project-report'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.echopen.asso.echopen"
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
