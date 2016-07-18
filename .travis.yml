@@ -3,7 +3,9 @@ language: android
 # Turn off caching to avoid any caching problems
 cache: false
 # Use the Travis Container-Based Infrastructure
-sudo: false
+sudo: required
+
+dist: precise
  
 android: 
   components: 
@@ -43,7 +45,7 @@ before_script:
   - adb shell input keyevent 82 &
   
 script:
-  - ./gradlew build jacocoTestReport assembleAndroidTest
+  - travis_wait 20 ./gradlew build jacocoTestReport assembleAndroidTest
   - ./gradlew connectedCheck
 
 after_success:

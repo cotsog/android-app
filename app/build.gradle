@@ -30,7 +30,6 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
-
     htmlDependencyReport {
         projects = project.allprojects
     }
