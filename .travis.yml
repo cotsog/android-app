@@ -45,7 +45,6 @@ before_script:
   - adb shell input keyevent 82 &
   
 script:
-  - travis_wait 20 ./gradlew build jacocoTestReport assembleAndroidTest
   - ./gradlew connectedCheck
 
 after_success:
