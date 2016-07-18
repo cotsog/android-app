@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.vanniktech.android.junit.jacoco'
+apply plugin: 'project-report'
 
 android {
     compileSdkVersion 23
@@ -28,6 +29,10 @@ android {
     }
     testOptions {
         unitTests.returnDefaultValues = true
+    }
+
+    htmlDependencyReport {
+        projects = project.allprojects
     }
     /* check if local.properties is in the , . Since this file is not under version control system, this is important
     when using continuous integration system
