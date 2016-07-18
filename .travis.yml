@@ -1,9 +1,14 @@
 language: android
+
+# Turn off caching to avoid any caching problems
+cache: false
+# Use the Travis Container-Based Infrastructure
+sudo: false
  
 android: 
   components: 
     - build-tools-22.0.1
-    - android-23
+    - android-21
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
@@ -19,7 +24,7 @@ env:
     
 before_script: 
   - "echo yes | android update sdk --filter platform-tools --no-ui --force > /dev/null"
-  - "echo yes | android update sdk --filter android-23 --no-ui --force > /dev/null"
+  - "echo yes | android update sdk --filter android-21 --no-ui --force > /dev/null"
   - "echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null"
   - "echo yes | android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null"
   - "export NDK_VERSION=r10e"
