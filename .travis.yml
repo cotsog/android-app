@@ -34,3 +34,4 @@ before_script:
 branches: 
   only: 
     - master
+	- travis_workaround
