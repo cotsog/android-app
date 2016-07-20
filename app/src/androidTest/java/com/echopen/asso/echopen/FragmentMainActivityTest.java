@@ -80,7 +80,7 @@ public class FragmentMainActivityTest extends ActivityInstrumentationTestCase2<M
      * The UI is intended to be more extensively explored when
      * the alert dialog is dismissed. The following tests are here just as examples
      */
-    public void testCancelClick() {
+    public void CancelClick() {
         onView(withText("Cancel")).
                 perform(click());
         onView(withId(R.id.btnCapture)).check(matches(isDisplayed()));
