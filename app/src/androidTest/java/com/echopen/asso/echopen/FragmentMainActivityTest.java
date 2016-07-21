@@ -70,7 +70,7 @@ public class FragmentMainActivityTest extends ActivityInstrumentationTestCase2<M
      * Clicking on UDP checkbox triggers ScanConversion on the data stored sent
      * from the hardware through UDP protocol
      */
-    public void testDataIsFetchedFromUDP() throws Throwable {
+    public void DataIsFetchedFromUDP() throws Throwable {
         ListView listView = alertDialog.getListView();
         View child = listView.getChildAt(2);
         clickAndValidate(child);
