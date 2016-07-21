@@ -18,8 +18,6 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static com.echopen.asso.echopen.utils.TestHelper.clickOnDialog;
 
 /**
- * Created by mehdibenchoufi on 27/07/15.
- *
  * Dedicated to test AlertDialog Fragment logic
  */
 
